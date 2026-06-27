@@ -1,0 +1,177 @@
+/* ==========================================
+   LARGE LAPTOP
+========================================== */
+
+@media (max-width:1200px){
+
+    .hero-container{
+        gap:50px;
+    }
+
+    .hero-content h1{
+        font-size:58px;
+    }
+
+    .dashboard-card{
+        max-width:480px;
+    }
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:992px){
+
+    .hero-container{
+        grid-template-columns:1fr;
+        gap:60px;
+        text-align:center;
+    }
+
+    .hero-content{
+        max-width:700px;
+        margin:auto;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-trust{
+        justify-content:center;
+    }
+
+    .hero-image{
+        justify-content:center;
+    }
+
+    .company-logos{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .feature-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .workflow-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .navbar{
+        height:70px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        padding:120px 0 80px;
+    }
+
+    .hero-content h1{
+        font-size:46px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        width:100%;
+    }
+
+    .dashboard-card{
+        max-width:100%;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+    .company-logos{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .feature-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2{
+        font-size:38px;
+    }
+
+    .cta h2{
+        font-size:42px;
+    }
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+    .container{
+        width:92%;
+    }
+
+    .hero-content h1{
+        font-size:36px;
+    }
+
+    .hero-badge{
+        font-size:12px;
+    }
+
+    .dashboard-card{
+        padding:18px;
+    }
+
+    .notification-card{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .notification-card span{
+        margin-left:0;
+    }
+
+    .agent-avatar{
+        width:42px;
+        height:42px;
+    }
+
+    .company-logos{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .cta h2{
+        font-size:34px;
+    }
+
+    .footer-content h2{
+        font-size:28px;
+    }
+
+}

@@ -1,0 +1,58 @@
+:root{
+
+    /* Background */
+
+    --bg:#0B0F19;
+    --surface:#111827;
+    --surface-light:#1F2937;
+
+    /* Brand */
+
+    --primary:#7C3AED;
+    --primary-light:#8B5CF6;
+
+    --secondary:#06B6D4;
+    --secondary-light:#22D3EE;
+
+    /* Text */
+
+    --text:#F8FAFC;
+    --text-light:#94A3B8;
+    --text-muted:#64748B;
+
+    /* Border */
+
+    --border:rgba(255,255,255,.08);
+
+    /* Success */
+
+    --success:#22C55E;
+
+    /* Fonts */
+
+    --heading:'Sora',sans-serif;
+    --body:'Inter',sans-serif;
+
+    /* Radius */
+
+    --radius-sm:12px;
+    --radius:20px;
+    --radius-lg:28px;
+
+    /* Shadow */
+
+    --shadow-lg:
+        0 25px 60px rgba(0,0,0,.35);
+
+    --shadow-primary:
+        0 15px 35px rgba(124,58,237,.30);
+
+    /* Transition */
+
+    --transition:.35s ease;
+
+    /* Container */
+
+    --container:1200px;
+
+}
