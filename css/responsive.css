@@ -2,18 +2,18 @@
    LARGE LAPTOP
 ========================================== */
 
-@media (max-width:1200px){
+@media (max-width:1200px) {
 
-    .hero-container{
-        gap:50px;
+    .hero-container {
+        gap: 50px;
     }
 
-    .hero-content h1{
-        font-size:58px;
+    .hero-content h1 {
+        font-size: 58px;
     }
 
-    .dashboard-card{
-        max-width:480px;
+    .dashboard-card {
+        max-width: 480px;
     }
 
 }
@@ -22,41 +22,75 @@
    TABLET
 ========================================== */
 
-@media (max-width:992px){
+@media (max-width:992px) {
 
-    .hero-container{
-        grid-template-columns:1fr;
-        gap:60px;
-        text-align:center;
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
     }
 
-    .hero-content{
-        max-width:700px;
-        margin:auto;
+    .hero-content {
+        max-width: 700px;
+        margin: auto;
     }
 
-    .hero-buttons{
-        justify-content:center;
+    .hero-buttons {
+        justify-content: center;
     }
 
-    .hero-trust{
-        justify-content:center;
+    .hero-trust {
+        justify-content: center;
     }
 
-    .hero-image{
-        justify-content:center;
+    .hero-image {
+        justify-content: center;
     }
 
-    .company-logos{
-        grid-template-columns:repeat(3,1fr);
+    .company-logos {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .feature-grid{
-        grid-template-columns:repeat(2,1fr);
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .workflow-grid{
-        grid-template-columns:1fr;
+    .workflow-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .pricing-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .footer-content {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+    }
+
+    .footer-brand p {
+
+        margin: auto;
+
+    }
+
+    .footer-links {
+
+        grid-template-columns: repeat(3, 1fr);
+
+        margin-top: 30px;
+
     }
 
 }
@@ -65,59 +99,149 @@
    MOBILE
 ========================================== */
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .navbar{
-        height:70px;
+    .navbar {
+        height: 70px;
     }
 
-    .nav-links{
-        display:none;
+    /* Mobile Navigation */
+
+    .menu-toggle {
+
+        display: block;
+
+        font-size: 28px;
+
+        color: #fff;
+
+        cursor: pointer;
+
+        z-index: 1001;
+
     }
 
-    .hero{
-        padding:120px 0 80px;
+    .nav-links {
+
+        position: fixed;
+
+        top: 70px;
+
+        left: -100%;
+
+        width: 100%;
+
+        height: calc(100vh - 70px);
+
+        background: rgba(11, 15, 25, .97);
+
+        backdrop-filter: blur(20px);
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: flex-start;
+
+        align-items: center;
+
+        gap: 35px;
+
+        padding-top: 60px;
+
+        transition: left .4s ease;
+
     }
 
-    .hero-content h1{
-        font-size:46px;
+    .nav-links.active {
+
+        left: 0;
+
     }
 
-    .hero-content p{
-        font-size:16px;
+    .nav-buttons {
+
+        display: none;
+
     }
 
-    .hero-buttons{
-        flex-direction:column;
+    .hero {
+        padding: 120px 0 80px;
+    }
+
+    .hero-content h1 {
+        font-size: 46px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
     }
 
     .primary-btn,
-    .secondary-btn{
-        width:100%;
+    .secondary-btn {
+        width: 100%;
     }
 
-    .dashboard-card{
-        max-width:100%;
+    .dashboard-card {
+        max-width: 100%;
     }
 
-    .stats{
-        grid-template-columns:1fr;
+    .stats {
+        grid-template-columns: 1fr;
     }
 
-    .company-logos{
-        grid-template-columns:repeat(2,1fr);
+    .company-logos {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .feature-grid{
-        grid-template-columns:1fr;
+    .feature-grid {
+        grid-template-columns: 1fr;
     }
 
-    .section-title h2{
-        font-size:38px;
+    .section-title h2 {
+        font-size: 38px;
     }
 
-    .cta h2{
-        font-size:42px;
+    .cta h2 {
+        font-size: 42px;
+    }
+
+    .testimonial-grid {
+
+        gap: 20px;
+
+    }
+
+    .pricing-grid {
+
+        gap: 20px;
+
+    }
+
+    .footer-links {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 25px;
+
+    }
+
+    .footer-links a {
+
+        justify-content: center;
+
+    }
+
+    .loader-logo {
+
+        font-size: 48px;
+
     }
 
 }
@@ -126,52 +250,76 @@
    SMALL MOBILE
 ========================================== */
 
-@media (max-width:480px){
+@media (max-width:480px) {
 
-    .container{
-        width:92%;
+    .container {
+        width: 92%;
     }
 
-    .hero-content h1{
-        font-size:36px;
+    .hero-content h1 {
+        font-size: 36px;
     }
 
-    .hero-badge{
-        font-size:12px;
+    .hero-badge {
+        font-size: 12px;
     }
 
-    .dashboard-card{
-        padding:18px;
+    .dashboard-card {
+        padding: 18px;
     }
 
-    .notification-card{
-        flex-direction:column;
-        align-items:flex-start;
+    .notification-card {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .notification-card span{
-        margin-left:0;
+    .notification-card span {
+        margin-left: 0;
     }
 
-    .agent-avatar{
-        width:42px;
-        height:42px;
+    .agent-avatar {
+        width: 42px;
+        height: 42px;
     }
 
-    .company-logos{
-        grid-template-columns:1fr;
+    .company-logos {
+        grid-template-columns: 1fr;
     }
 
-    .section-title h2{
-        font-size:30px;
+    .section-title h2 {
+        font-size: 30px;
     }
 
-    .cta h2{
-        font-size:34px;
+    .cta h2 {
+        font-size: 34px;
     }
 
-    .footer-content h2{
-        font-size:28px;
+    .footer-content h2 {
+        font-size: 28px;
+    }
+
+    .footer-brand h2 {
+
+        font-size: 30px;
+
+    }
+
+    .price-card h2 {
+
+        font-size: 38px;
+
+    }
+
+    .loader-logo {
+
+        font-size: 38px;
+
+    }
+
+    .loader-text {
+
+        letter-spacing: 3px;
+
     }
 
 }
